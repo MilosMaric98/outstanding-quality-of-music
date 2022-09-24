@@ -1,0 +1,530 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #27ae60;
+  position: sticky;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+.navbar ul li a:hover {
+  background-color: dodgerblue;
+}
+p {
+  color: #333;
+}
+.hero-section {
+  height: 140vh;
+  background-image: url(../img/hero-image.png);
+  background-position: center;
+  background-size: cover;
+}
+.logo {
+  padding-left: 8%;
+  padding-top: 4%;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10%;
+}
+.hero-text h1 {
+  color: rgb(170, 49, 49);
+  font-size: 6rem;
+  padding-right: 11%;
+}
+.hero-text p {
+  padding-right: 10%;
+  color: #fff;
+}
+.bigger-text {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero-text p:nth-child(3) {
+  font-style: italic;
+  padding-left: 52%;
+  padding-top: 1%;
+  font-size: 0.9rem;
+  margin-bottom: 2%;
+}
+.btn {
+  margin-right: 10%;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(160, 76, 76);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: rgb(170, 49, 49);
+}
+.product-info,
+.apple-w1-chip,
+.feel-your-music {
+  display: flex;
+  width: 100%;
+  margin-top: -5px;
+}
+.apple-w1-chip {
+  margin-top: 10%;
+}
+
+.product-info-text,
+.apple-w1-chip-text {
+  width: 45%;
+  padding-left: 10%;
+  padding-top: 8%;
+}
+
+.apple-w1-chip-text {
+  width: 50%;
+  /*background-image: url(../img/logo-white.png);
+  background-position: right;
+  background-size: 90%;
+  background-repeat: no-repeat;*/
+}
+
+.feel-your-music-text {
+  width: 40%;
+  padding-top: 8%;
+  padding-right: 8%;
+  text-align: right;
+}
+
+.product-info-text h2,
+.apple-w1-chip-text h2,
+.feel-your-music-text h2,
+.what-in-box-text h2 {
+  font-size: 3rem;
+}
+.product-info-text h3,
+.apple-w1-chip-text h3,
+.feel-your-music-text h3,
+.what-in-box-text h3 {
+  margin: 5% 0;
+  font-weight: lighter;
+}
+.product-info-text p,
+.apple-w1-chip-text p,
+.feel-your-music-text p,
+.what-in-box-text p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 7%;
+}
+.product-info-image {
+  margin-top: -154px;
+  margin-bottom: -50px;
+  width: 55%;
+  height: auto;
+  background-image: url(../img/image-1.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.apple-w1-chip-image {
+  width: 40%;
+  height: auto;
+  background: url(../img/image-woman.jpeg);
+  background-position: right;
+  background-size: cover;
+}
+.feel-your-music-image {
+  width: 60%;
+  height: auto;
+  background: url(../img/image-2.png);
+  background-position: left;
+  background-size: cover;
+}
+
+.youtube {
+  margin-top: 5%;
+}
+
+.available-colors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.available-colors h2 {
+  font-size: 3rem;
+  margin: 5% 0 2%;
+}
+.available-colors h3 {
+  font-weight: lighter;
+  margin-bottom: 3%;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+}
+.item {
+  height: 400px;
+  width: 33%;
+  text-align: center;
+}
+.item-img {
+  background-position: center;
+  background-size: cover;
+  height: 65%;
+}
+
+.img-1 {
+  background-image: url(../img/image-color-black.png);
+}
+.img-2 {
+  background-image: url(../img/image-color-rose.png);
+}
+.img-3 {
+  background-image: url(../img/image-color-blue.png);
+}
+.item-name {
+  color: #333;
+}
+.item-price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.what-in-box {
+  display: flex;
+  max-width: 100%;
+  height: 80vh;
+}
+
+.what-in-box-text {
+  width: 50%;
+  padding-top: 8%;
+  padding-right: 8%;
+  text-align: left;
+}
+
+.what-in-box-image {
+  width: 50%;
+  height: auto;
+  background: url(../img/image-box.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.what-in-box-text ul {
+  font-style: italic;
+}
+.what-in-box-text ul li {
+  margin: 3% 0;
+  font-size: 0.9rem;
+}
+
+.what-in-box-text ul li:last-child {
+  margin-bottom: 5%;
+}
+
+.images {
+  display: flex;
+  height: 100vh;
+}
+.col {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.col-1 {
+  background-image: url(../img/image-3.png);
+}
+.col-2-item-1 {
+  background-image: url(../img/image-4.png);
+}
+.col-2-item-2 {
+  background-image: url(../img/image-5.png);
+  background-size: 120%;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+}
+.col-2-item {
+  height: 50%;
+}
+
+.tech-specs {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.tech-specs-image {
+  width: 33%;
+  height: 80%;
+  background-image: url(../img/image-6.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.tech-specs-text {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+}
+.tech-specs-text-part-2 {
+  display: flex;
+  gap: 10%;
+}
+.tech-specs-text h2 {
+  font-size: 3rem;
+  margin: 5% 0;
+}
+.tech-specs-text h3 {
+  font-weight: lighter;
+  margin-bottom: 8%;
+}
+.tech-specs-text ul {
+  font-style: italic;
+}
+.tech-specs-text ul li {
+  margin: 5% 0;
+  font-size: 0.9rem;
+}
+
+footer {
+  background-color: #384450;
+  text-align: center;
+  padding: 3%;
+}
+footer p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+footer a {
+  color: #27ae60;
+}
+
+@media only screen and (max-width: 1326px) {
+  .hero-text {
+    margin-top: 0;
+  }
+  .what-in-box {
+    height: 125vh;
+  }
+  .tech-specs {
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 1038px) {
+  .what-in-box-image {
+    background-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .hero-text h1 {
+    padding-left: 60%;
+  }
+  .product-info-text,
+  .apple-w1-chip-text {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+  .feel-your-music-text {
+    padding-top: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-text p:nth-child(3) {
+    padding-left: 40%;
+    text-align: right;
+  }
+  .product-info-image {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .apple-w1-chip-image {
+    margin-top: -5%;
+    margin-bottom: -5%;
+  }
+  .feel-your-music {
+    height: 130vh;
+    position: relative;
+  }
+  .feel-your-music-image {
+    width: 100%;
+    background-position: center;
+  }
+  .feel-your-music-text {
+    position: absolute;
+    right: 0.5%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .feel-your-music-text p {
+    width: 70%;
+    margin-bottom: 10%;
+    line-height: 1.4rem;
+  }
+  .items {
+    margin: 0 15%;
+    gap: 8%;
+  }
+
+  .tech-specs {
+    height: 130vh;
+    position: relative;
+  }
+  .tech-specs-image {
+    width: 100%;
+    height: 65%;
+    background-size: 50%;
+    margin-top: 5%;
+    margin-left: -45%;
+  }
+  .tech-specs-text {
+    position: absolute;
+    right: 0.5%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .tech-specs ul li {
+    margin-bottom: 10%;
+    line-height: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-text p:nth-child(3) {
+    padding-left: 20%;
+    line-height: 1.5rem;
+  }
+  .product-info,
+  .apple-w1-chip,
+  .feel-your-music {
+    flex-direction: column;
+  }
+  .product-info-text,
+  .apple-w1-chip-text,
+  .feel-your-music-text {
+    width: 100%;
+  }
+
+  .product-info-image,
+  .apple-w1-chip-image,
+  .feel-your-music-image {
+    width: 100%;
+    height: 110vh;
+  }
+  .product-info-image {
+    background-size: 70%;
+  }
+  .feel-your-music {
+    height: 180vh;
+  }
+  .feel-your-music-image {
+    height: 180vh;
+  }
+  .feel-your-music-text {
+    width: 40%;
+  }
+  .items {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+  }
+  .what-in-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 210vh;
+  }
+  .what-in-box-text {
+    width: 100%;
+    padding-left: 15%;
+  }
+
+  .what-in-box-image {
+    width: 100%;
+    height: 100vh;
+  }
+  .images {
+    flex-direction: column;
+    height: 300vh;
+  }
+  .col-1,
+  .col-2 {
+    width: 100%;
+    height: 150vh;
+  }
+  .col-2-item {
+    height: 200%;
+    width: 100%;
+  }
+  .col-2-item-1,
+  .col-2-item-2 {
+    height: 100%;
+  }
+  .tech-specs {
+    flex-direction: column;
+    height: 300vh;
+    width: 100%;
+  }
+  .tech-specs-image {
+    width: 100%;
+    height: 70%;
+    background-size: 40%;
+    margin-left: 0;
+  }
+  .tech-specs-text {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5%;
+  }
+
+  .tech-specs-text-part-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .tech-specs-text-part-2-1 {
+    margin-bottom: 15%;
+  }
+  footer {
+    padding: 5%;
+  }
+}
